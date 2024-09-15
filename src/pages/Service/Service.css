@@ -1,0 +1,97 @@
+.home-page {
+    background-color: #ffffff; 
+    position: absolute;
+    overflow: visible; 
+    width: 100%;
+}
+
+.overlap-1 {
+  height: 100%;
+  left: 0%;
+  position: absolute;
+  top: 116%;
+  width: 100%;
+}
+.img2 {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 64%;
+  background-image: url(../../Components/Image/2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+} 
+
+.img3 {
+  height: 100%;
+  left: 60%;
+  object-fit: none;
+  position: absolute;
+  top: 58%;
+  width: 38%;
+  background-image: url(../../Components/Image/3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.img19 {
+  height: 100%;
+  left: 10;
+  object-fit: cover;
+  position: absolute;
+  top: 158%;
+  width: 64%;
+  background-image: url(../../Components/Image/2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+} 
+
+.img20 {
+  height: 100%;
+  left: 60%;
+  object-fit: none;
+  position: absolute;
+  top: 218%;
+  width: 38%;
+  background-image: url(../../Components/Image/3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+} 
+
+.home-page .text-wrapper-2 {
+  color: #302615e6;
+  font-family: "Inter", Helvetica;
+  font-size: 140%;
+  font-weight: 400;
+  left: 66%;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 10%;
+  width: 31%;
+}
+.home-page .text-wrapper-4 {
+  color: #302615e6;
+  font-family: "Inter", Helvetica;
+  font-size: 140%;
+  font-weight: 400;
+  left: 66%;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 180%;
+  width: 31%;
+}
+.home-page .text-wrapper-5 {
+  color: #302615e6;
+  font-family: "Inter", Helvetica;
+  font-size: 140%;
+  font-weight: 400;
+  left: 0%;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 280%;
+  width: 31%;
+}
