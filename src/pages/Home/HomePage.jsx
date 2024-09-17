@@ -3,13 +3,26 @@ import './HomePage.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import { Link } from "react-router-dom";
 
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
 import '../../../node_modules/swiper/swiper.css';
 import '../../../node_modules/swiper/modules/navigation.min.css';
 import '../../../node_modules/swiper/modules/pagination.min.css';
 import '../../../node_modules/swiper/swiper-bundle.min.css';
 
-
+import img1 from "../../Components/Image/7.jpg";
+import img2 from "../../Components/Image/8.jpg";
+import img3 from "../../Components/Image/9.jpg";
+import img4 from "../../Components/Image/11.jpg";
+import img5 from "../../Components/Image/12.jpg";
+import img6 from "../../Components/Image/13.jpg";
+import img7 from "../../Components/Image/14.jpg";
+import img8 from "../../Components/Image/15.jpg";
+import img9 from "../../Components/Image/16.jpg";
+import img10 from "../../Components/Image/17.jpg";
+import img11 from "../../Components/Image/18.jpg";
+import img12 from "../../Components/Image/19.jpg";
+import img13 from "../../Components/Image/20.jpg";
 
 const Home = () => {
     useEffect(() => {
@@ -74,7 +87,96 @@ const Home = () => {
                     </p>
                 </div>
             </div>
-            
+            <div className="text-wrapper-5">Concept</div>
+            <div className="overlap-4">
+                <div className="image-container">
+                    <div className="image-wrapper">
+                        <img src={img1} alt="Image 1" className="image" />
+                        <div className="overlay-text small-text">Concept 1</div>
+                        <div className="overlay-text full-text">Concept 1</div>
+                    </div>
+                    <div className="image-wrapper">
+                        <img src={img2} alt="Image 2" className="image" />
+                        <div className="overlay-text small-text">Concept 2</div>
+                        <div className="overlay-text full-text">Concept 2</div>
+                    </div>
+                    <div className="image-wrapper">
+                        <img src={img3} alt="Image 3" className="image" />
+                        <div className="overlay-text small-text">Concept 3</div>
+                        <div className="overlay-text full-text">Concept 3</div>
+                    </div>
+                </div>
+            </div>
+            <div className="text-wrapper-6">Store</div>
+            <div className="carousel-container">
+                <div className="swiper-buttons">
+                    <div className="swiper-button-prev"></div>
+                    <div className="swiper-button-next"></div>
+                </div>
+                <Swiper
+                    modules={[Navigation, Pagination]}
+                    spaceBetween={10}
+                    slidesPerView={4}
+                    navigation={{
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    }}
+                    pagination={{ clickable: true }}
+                    className="swiper-container"
+                    
+                >
+                    <SwiperSlide>
+                        <div className="image-wrapper1">
+                            <img src={img4} alt="Image 1" className="image" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="image-wrapper1">
+                            <img src={img5} alt="Image 2" className="image" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="image-wrapper1">
+                            <img src={img6} alt="Image 3" className="image" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="image-wrapper1">
+                            <img src={img7} alt="Image 4" className="image" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="image-wrapper1">
+                            <img src={img8} alt="Image 5" className="image" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="image-wrapper1">
+                            <img src={img9} alt="Image 6" className="image" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="image-wrapper1">
+                            <img src={img10} alt="Image 7" className="image" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="image-wrapper1">
+                            <img src={img11} alt="Image 8" className="image" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="image-wrapper1">
+                            <img src={img12} alt="Image 9" className="image" />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="image-wrapper1">
+                            <img src={img13} alt="Image 10" className="image" />
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
+            </div>
         </div>
     );
 };
